@@ -3,6 +3,8 @@ MAINTAINER GGMethos <ggmethos@autistici.org>
 
 USER root
 
+RUN echo "Mumble Installation Starting"
+
 RUN apk upgrade --update-cache --available && \
 apk --no-cache add murmur
 
