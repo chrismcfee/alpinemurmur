@@ -3,7 +3,7 @@ MAINTAINER GGMethos <ggmethos@autistici.org>
 
 USER root
 
-RUN echo "Mumble Installation Starting"
+#Mumble Server
 
 RUN apk upgrade --update-cache --available && \
 apk --no-cache add murmur
@@ -34,10 +34,6 @@ COPY data/murmur.ini /etc/murmur.ini
 USER mumble
 
 RUN echo "testing"
-
-#RUN /etc/init.d/murmur restart  
-#CMD ["murmurd", "-fg", "-ini", "/etc/murmur.ini"]
-
 
 ##########################################################
 
