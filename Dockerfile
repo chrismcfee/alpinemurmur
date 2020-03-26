@@ -7,9 +7,7 @@ USER root
 
 RUN apk upgrade --update-cache --available && \
 apk --no-cache add murmur
-
 RUN apk update
-
 RUN apk upgrade
 
 RUN apk add openrc
